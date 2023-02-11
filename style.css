@@ -1,0 +1,152 @@
+*  {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #444;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.scroll {
+    background-color: #fed9ff;
+    width: 800px;
+    height: 800px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+h1 {
+
+    color: rgb(179, 131, 226);
+    font-size: 10rem;
+    text-align: center;
+    opacity: 0.4;
+}
+
+form  {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 400px;
+    position: relative;
+}
+
+.input {
+    border: none;
+    color: #444;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.input::placeholder {
+    color: #d5d5d5;
+}
+
+.input:focus {
+    outline-color:  rgb(179, 131, 226);
+}
+
+.todos{
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+
+.todos li {
+    border-top: 1px solid #e5e5e5;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.todos li.completed {
+    color: #6b6b6b;
+    text-decoration: line-through;
+}
+
+small {
+    color: #b5b5b5;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+/* Media queries */
+
+/* For larger to medium screens 1200px wide and below */
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        width: 65%;
+        height: unset;
+        margin: 0 auto;
+        clear: both;
+        padding-left: 10px;
+    }
+
+    #form {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #todos {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+  
+}
+
+/* For medium screen sizes 950px and down */
+@media screen and (max-width 950px) {
+
+    .title {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+    .todos {
+        font-size: 80%;
+        font-family:  "Raleway", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+
+        width: 200px;
+        height: 100px;
+
+        padding-top: 40px;
+        padding-left: 10px;
+
+        background-color: #f5f5f5;
+
+        bottom: 30px;
+        float: left;
+        position: relative;
+    }
+
+    /* For small screen sizes below 800px width */
+@media screen and (max-width: 800px) {
+    
+
+    .title  {
+        float: left;
+        list-style-type: none;
+        margin: 10px;
+    }
+
