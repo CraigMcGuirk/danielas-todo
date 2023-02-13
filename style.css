@@ -89,7 +89,7 @@ small {
 /* For larger to medium screens 1200px wide and below */
 
 @media screen and (max-width: 1200px) {
-    h1 {
+    #form {
         width: 65%;
         height: unset;
         margin: 0 auto;
@@ -97,10 +97,6 @@ small {
         padding-left: 10px;
     }
 
-    #form {
-        padding: 30px 0;
-        margin: 0;
-    }
 
     #todos {
         width: 100%;
@@ -111,44 +107,26 @@ small {
   
 }
 
-/* For medium screen sizes 950px and down */
-@media screen and (max-width 950px) {
-
-    #title {
+@media screen and (max-width: 950px) {
+    form {
+        width: 65%;
         height: unset;
-        width: 50%;
-        clear: left;
-        float: left;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        line-height: 25px;
-    }
-    #todos {
-        font-size: 80%;
-        font-family:  "Raleway", sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-
-        width: 200px;
-        height: 100px;
-
-        padding-top: 40px;
+        margin: 0 auto;
+        clear: both;
         padding-left: 10px;
+    }
 
-        background-color: #000;
-
-        bottom: 30px;
-        float: left;
+    .input {
         position: relative;
+        padding: 5%;
+        float: inherit;
     }
 
-    /* For small screen sizes below 800px width */
-@media screen and (max-width: 800px) {
-    
-
-    #title  {
+    #todos {
+        width: 100%;
         float: left;
-        list-style-type: none;
-        margin: 10px;
+        padding: 0;
     }
 
+  
+}
